@@ -76,7 +76,7 @@ state <- counties %>%
 ggplot(state, aes(x = Rank, y = State.Diversity)) + geom_point()
 ```
 
-![](diversity_03_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](https://github.com/NeonTheorist/Diversity.Index/blob/master/unnamed-chunk-3-1.png?raw=true)
 
 Clearly one state is wacky.
 
