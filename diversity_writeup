@@ -96,14 +96,14 @@ state_49 <- filter(state, !State == "HI")
 ggplot(state_49, aes(x = Rank, y = State.Diversity)) + geom_point() + geom_smooth()
 ```
 
-![](diversity_03_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](https://github.com/NeonTheorist/Diversity.Index/blob/master/unnamed-chunk-5-1.png?raw=true)
 
 ``` r
 ggplot(state_49, aes(x = State.Diversity)) + geom_histogram(breaks = seq(0.1, 0.6, by = 0.05), col = "black", fill = "blue", alpha = 0.3) + geom_density(col = 2) + scale_y_continuous(breaks = seq(0,11, by = 1 )) +
   labs(title = "State Level Diversity Index Distribution", x = "Diversity Index", y = "Number of States")
 ```
 
-![](diversity_03_files/figure-markdown_github/unnamed-chunk-5-2.png)
+![](https://github.com/NeonTheorist/Diversity.Index/blob/master/unnamed-chunk-5-2.png?raw=true)
 
 ``` r
 summary(state_49$State.Diversity)
@@ -134,7 +134,7 @@ counties %>%
   labs(title = "State Diversity: Mean and Variations Between Counties", x = "State Diversity Mean", y = "Standard Deviation Between Counties") 
 ```
 
-![](diversity_03_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](https://github.com/NeonTheorist/Diversity.Index/blob/master/unnamed-chunk-6-1.png?raw=true)
 
 ``` r
 counties %>%
@@ -146,7 +146,7 @@ counties %>%
     coord_cartesian(xlim = c(0.12,0.22))
 ```
 
-![](diversity_03_files/figure-markdown_github/unnamed-chunk-6-2.png)
+![](https://github.com/NeonTheorist/Diversity.Index/blob/master/unnamed-chunk-6-2.png?raw=true)
 
 These plots measure the standard deviation of county diversity within each state against that state's mean county diversity. Vermont, for instance, has a low state diversity and low diversity between counties. New Jersey has a very high mean and high diversity between counties. South Carolina has a high mean diversity rating but a much lower deviation between counties than the trendline would expect.
 
@@ -168,7 +168,7 @@ counties %>%
   theme(axis.text.x = element_text(size = 6))
 ```
 
-![](diversity_03_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](https://github.com/NeonTheorist/Diversity.Index/blob/master/unnamed-chunk-7-1.png?raw=true)
 
 The boxplot reveals differences that the scatterplot hides. Looking at the zoomed-in scatterplot, we can see that Nevada and Wisconsin are very similar in terms of mean diversity index and standard deviation, but the states look different when we examine the boxplot. Wisconsin's median diversity score is lower than Nevada's but Nevada has a greater number of outlier counties. Wisconson's counties are mostly clustered around the median, except for one county with a greater diversity score than any county in either of the two states.
 
